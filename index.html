@@ -4,27 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Portuguese poem generator</title>
   </head>
   <body>
     <div class="container">
       <h1>Portuguese poem generator</h1>
-      <form>
+      <form id="poem-generator-form">
         <input
           type="text"
           placeholder="Enter the topic of the poem"
           autofocus
+          required
           autocomplete="off"
           class="search-input"
         />
         <input type="submit" class="button" />
       </form>
       <main>
-        <div class="poem">
+        <div class="poem" id="poem">
           <p>
-            bla bla bla bla
             <br />
-            bla bla bla bla
           </p>
         </div>
       </main>
@@ -41,5 +41,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
