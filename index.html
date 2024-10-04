@@ -11,20 +11,23 @@
   <body>
     <div class="container">
       <h1>Portuguese poem generator</h1>
-      <form id="poem-generator-form">
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-          autocomplete="off"
-          class="search-input"
-          id="search-input"
-        />
-        <input type="submit" class="button" />
-      </form>
+      <div class="form-container">
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <p class="hint">ie. dog, cat or tree</p>
+      </div>
       <main>
-        <div class="poem" id="poem">
+        <div class="hidden" id="poem">
           <p>
             <br />
           </p>
